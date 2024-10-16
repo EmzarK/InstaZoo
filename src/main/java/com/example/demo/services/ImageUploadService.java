@@ -39,7 +39,7 @@ public class ImageUploadService {
         this.postRepository = postRepository;
     }
 
-    public ImageModel uploadImageTouser(MultipartFile file, Principal principal) throws IOException {
+    public ImageModel uploadImageToUser(MultipartFile file, Principal principal) throws IOException {
         User user = getUserByPrincipal(principal);
         LOG.info("Uploading image profile to User {}", user.getUsername());
 
